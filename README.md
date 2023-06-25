@@ -65,7 +65,7 @@ e.g.
 
 /tf/caf/landingzones/aztfmod/modules/webapps/linux_function_app
 
-Step 3: add terraform code into the new module folder
+Step 3: add terraform code tf files into the new module folder
 e.g.
 
 /tf/caf/landingzones/aztfmod/modules/webapps/linux_function_app/locals.dynamic_app_settings.tf
