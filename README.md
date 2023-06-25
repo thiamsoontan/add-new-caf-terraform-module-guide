@@ -1,8 +1,8 @@
 # How to add a new caf terraform module
 
+This guide provide you a step-by-step example of how to create a new linux_function_app
 
-
-How to add in a new module in CAF Terraform?
+## How to add in a new module libux_function_app in CAF Terraform?
 
 Step 1: Go to Folder: /tf/caf/landingzones/aztfmod, and modify the below files.
 
@@ -29,6 +29,7 @@ e.g.
     #TODO: add funciton apps and linux funciton apps
     function_apps                                  = try(local.combined_objects_azurerm_function_apps, null)
     linux_function_apps                            = try(local.combined_objects_linux_function_apps, null)
+```
 
 4. add new module (to existing tf file or create a new tf file)
 file: /tf/caf/landingzones/aztfmod/function_app.tf
@@ -77,6 +78,7 @@ e.g.
 ```bash
       linux_function_apps          = var.linux_function_apps
 ```
+
 Step 5: add variable of module 
 file: /tf/caf/landingzones/caf_solution/variables.webapp.tf
 e.g.
