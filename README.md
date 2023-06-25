@@ -4,7 +4,7 @@ This guide provide you a step-by-step example of how to create a new linux_funct
 
 ## How to add in a new module libux_function_app in CAF Terraform?
 
-###Step 1: Go to Folder: /tf/caf/landingzones/aztfmod, and modify the below files.
+### Step 1: Go to Folder: /tf/caf/landingzones/aztfmod, and modify the below files.
 
 1. add local objects
 
