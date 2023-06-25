@@ -4,7 +4,7 @@ This guide provide you a step-by-step example of how to create a new linux_funct
 
 ## How to add in a new module libux_function_app in CAF Terraform?
 
-Step 1: Go to Folder: /tf/caf/landingzones/aztfmod, and modify the below files.
+###Step 1: Go to Folder: /tf/caf/landingzones/aztfmod, and modify the below files.
 
 1. add local objects
 
@@ -60,12 +60,12 @@ data "azurerm_storage_account" "linux_function_apps" {
 }
 ```
 
-Step 2: create a new folder for the module 
+###Step 2: create a new folder for the module 
 e.g.
 
 /tf/caf/landingzones/aztfmod/modules/webapps/linux_function_app
 
-Step 3: add terraform code tf files into the new module folder
+###Step 3: add terraform code tf files into the new module folder
 e.g.
 
 /tf/caf/landingzones/aztfmod/modules/webapps/linux_function_app/locals.dynamic_app_settings.tf
@@ -75,7 +75,7 @@ e.g.
 /tf/caf/landingzones/aztfmod/modules/webapps/linux_function_app/output.tf
 /tf/caf/landingzones/aztfmod/modules/webapps/linux_function_app/variables.tf
 
-Step 4: modify caf_solution /tf/caf/landingzones/caf_solution
+###Step 4: modify caf_solution /tf/caf/landingzones/caf_solution
 add local variable
 
 file: /tf/caf/landingzones/caf_solution/local.webapp.tf
@@ -84,7 +84,7 @@ e.g.
       linux_function_apps          = var.linux_function_apps
 ```
 
-Step 5: add variable of module 
+###Step 5: add variable of module 
 
 file: /tf/caf/landingzones/caf_solution/variables.webapp.tf
 e.g.
