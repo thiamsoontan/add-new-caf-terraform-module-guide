@@ -7,6 +7,7 @@ This guide provide you a step-by-step example of how to create a new linux_funct
 Step 1: Go to Folder: /tf/caf/landingzones/aztfmod, and modify the below files.
 
 1. add local objects
+
 file: /tf/caf/landingzones/aztfmod/locals.tf 
 e.g.
 ```bash
@@ -15,6 +16,7 @@ e.g.
 ```
 
 2. add local combined objects
+
 file: /tf/caf/landingzones/aztfmod/locals.combined_onjects.tf
 e.g.
 ```bash
@@ -23,6 +25,7 @@ e.g.
 ```
 
 3. add local remote objects
+
 file: /tf/caf/landingzones/aztfmod/local.remote_objects.tf
 e.g.
 ```bash
@@ -32,6 +35,7 @@ e.g.
 ```
 
 4. add new module (to existing tf file or create a new tf file)
+
 file: /tf/caf/landingzones/aztfmod/function_app.tf
 e.g.
 ```bash
@@ -73,6 +77,7 @@ e.g.
 
 Step 4: modify caf_solution /tf/caf/landingzones/caf_solution
 add local variable
+
 file: /tf/caf/landingzones/caf_solution/local.webapp.tf
 e.g.
 ```bash
@@ -80,6 +85,7 @@ e.g.
 ```
 
 Step 5: add variable of module 
+
 file: /tf/caf/landingzones/caf_solution/variables.webapp.tf
 e.g.
 ```bash
