@@ -2,6 +2,9 @@
 
 This guide provide you a step-by-step example of how to create a new linux_function_app
 
+reference:
+https://github.com/claranet/terraform-azurerm-function-app/blob/master/modules/linux-function/r-function.tf
+
 ## How to add in a new module libux_function_app in CAF Terraform?
 
 ### Step 1: Go to Folder: /tf/caf/landingzones/aztfmod, and modify the below files.
@@ -35,6 +38,7 @@ e.g.
 ```
 
 4. add new module (to existing tf file or create a new tf file)
+ensure to add all variables defined in the variable file /tf/caf/landingzones/aztfmod/modules/webapps/linux_function_app/variables.tf 
 
 file: /tf/caf/landingzones/aztfmod/function_app.tf
 e.g.
@@ -45,6 +49,8 @@ module "linux_function_apps" {
   depends_on = [module.networking]
   for_each   = local.webapp.linux_function_apps
 
+  # defined all your variables 
+...
 ...
 ...
 
@@ -78,6 +84,8 @@ e.g.
 ### Step 4: modify caf_solution /tf/caf/landingzones/caf_solution
 add local variable
 
+xxxx - /tf/caf/landingzones/caf_solution/local.remote.tf
+
 file: /tf/caf/landingzones/caf_solution/local.webapp.tf
 e.g.
 ```bash
@@ -95,3 +103,4 @@ variable "linux_function_apps" {
 ```
 
 
+Note: check /tf/caf/landingzones/caf_solution/landingzone.tf to ensure variables are correct (if required)
